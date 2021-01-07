@@ -12,7 +12,7 @@ export function App() {
         <Route path="/login">
           <LoginPage />
         </Route>
-        <Route path="/401">
+        <Route path="/403">
           <Forbidden />
         </Route>
         <Route path="/404">
@@ -23,6 +23,9 @@ export function App() {
         </Route>
         <Route path="/dashboard">
           <DashboardPage />
+        </Route>
+        <Route>
+          <NotFound />
         </Route>
       </Switch>
     </div>
